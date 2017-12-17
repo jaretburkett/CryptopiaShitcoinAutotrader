@@ -1,0 +1,15 @@
+{
+  "cryptopia":{
+    "key":"YourCryptopiaKey",
+    "secret":"YourCryptopiaSecret"
+  },
+  "shitcoins":[
+    "GBX"
+  ],
+  "cashOutCoin":"BCH",
+  "cashOutAddress":"1BCHAddressCashout",
+  "minShitcoinSell":0.1,
+  "minCashOutCoinBuy":0.0005,
+  "minCashout":0.01,
+  "intervalSeconds":300
+}
