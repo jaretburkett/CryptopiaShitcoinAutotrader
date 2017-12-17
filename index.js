@@ -17,12 +17,13 @@ async function run() {
     for(let i = 0; i < config.shitcoins.length; i++){
         await sellShitcoin(config.shitcoins[i]);
     }
+    if(config.cashOutCoin){
+        // Buy the coin cashing out with
+        await buyCashOutCoin();
 
-    // Buy the coin cashing out with
-    await buyCashOutCoin();
-
-    // Make the withdrawal
-    await cashOut();
+        // Make the withdrawal
+        await cashOut();
+    }
 }
 
 async function cancelOrders() {
